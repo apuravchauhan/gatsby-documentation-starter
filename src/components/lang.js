@@ -11,11 +11,15 @@ export default class Lang extends Component {
     const {code} = this.props;
     LangUtils.currentLocale = code;
   }
+  getLocaleSpecificURL(){
+    let newURL = LangUtils.newURL(this.props.details.root);
+    console.log(newURL);
+    return newURL;
+  }
   render() {
     const { details } = this.props;
-
     return <Link className='link'
-        to={details.root}
+        to={this.getLocaleSpecificURL()}
         style={{
           color: 'white',
           textDecoration: 'none',

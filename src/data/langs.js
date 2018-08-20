@@ -25,6 +25,17 @@ export class LangUtils{
             LangUtils.currentLocale = locale;
         }
     }
+    static newURL(locale){
+        if(window && window.location){
+            let pathParts = window.location.pathname.split('/');
+            if(pathParts[1] && langMap[pathParts[1]]){
+                pathParts[1] = locale;
+            }else{
+                pathParts.splice( 1, 0, locale); 
+            }
+            return pathParts.join('/');
+        }
+    }
 }
 LangUtils.checkURLLocale();
 export default langMap;
