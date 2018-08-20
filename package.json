@@ -17,7 +17,7 @@
     "react-intl": "^2.4.0"
   },
   "keywords": [
-    "gatsby","documentation","mdx","offline","i18n"
+    "gatsby","documentation","mdx","offline","i18n","documentation-as-code"
   ],
   "license": "MIT",
   "scripts": {
