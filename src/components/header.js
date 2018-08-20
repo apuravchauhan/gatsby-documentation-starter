@@ -4,10 +4,10 @@ import Lang from './lang'
 import locales from '../data/langs'
 
 const Header = ({ siteTitle }) => {
-  const LangLinks =  Object.keys(locales).map(code=><Lang code={code} key={code} details={locales[code]}/>)
-  return <div style={{background: '#012b72'}}>
+  const LangLinks = Object.keys(locales).map(code => <Lang code={code} key={code} details={locales[code]} />)
+  return <div style={{ background: '#012b72' }}>
     <div className="header">
-      <h1 style={{ margin: 5 }}>
+      <h2 style={{ margin: 5 }}>
         <Link
           to="/"
           style={{
@@ -16,7 +16,7 @@ const Header = ({ siteTitle }) => {
           }}>
           {siteTitle}
         </Link>
-      </h1>
+      </h2>
       {LangLinks}
     </div>
   </div>

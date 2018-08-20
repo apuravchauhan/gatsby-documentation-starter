@@ -12,16 +12,9 @@ export default class Layout extends Component {
     const currLocale = LangUtils.currentLocale;
     addLocaleData(langMap[currLocale].localeData);
     this.state = { msg: langMap[currLocale].data, locale: currLocale }
-    //  this.setMessageBundle = this.setMessageBundle.bind(this);
 
   }
 
-  // setMessageBundle(code){
-  //   LangUtils.currentLocale = code;
-  //   const langData = langMap[code];
-  //   addLocaleData(langData.localeData);
-  //   this.setState({ msg: langData.data ,locale:code});
-  // }
 
   render() {
     const root = this.state.locale === 'en' ? '' : this.state.locale;
@@ -51,11 +44,11 @@ export default class Layout extends Component {
               <html lang="en" />
             </Helmet>
             <Header siteTitle={data.site.siteMetadata.title} />
-            <div style={{background: '#00b9f5'}}>
-            <div className="headersub">
-              <Link to={`${root}/`} className='link' activeClassName='linkactive'>Home</Link>
-              <Link to={`${root}/docs/android`} className='link' activeClassName='linkactive'>Docs</Link>
-            </div>
+            <div style={{ background: '#00b9f5' }}>
+              <div className="headersub">
+                <Link to={`${root}/`} className='link' activeClassName='linkactive'>Home</Link>
+                <Link to={`${root}/docs/android`} className='link' activeClassName='linkactive'>Docs</Link>
+              </div>
             </div>
             <div
               style={{
@@ -65,8 +58,8 @@ export default class Layout extends Component {
               }}>
 
               {children}
-              <hr style={{margin:10,height:2,background:'#f0f0f0'}}/>
-              MIT License | <a href="https://twitter.com/apuravchauhan">@apuravchauhan</a>  
+              <hr style={{ margin: 10, height: 2, background: '#f0f0f0' }} />
+              MIT License | <a href="https://twitter.com/apuravchauhan">@apuravchauhan</a>
             </div>
           </div>
         </IntlProvider>

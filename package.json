@@ -1,23 +1,23 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "gatsby-documentation-starter",
+  "description": "Gatsby documentation starter",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Apurav Chauhan <Twitter: @apuravchauhan>",
   "dependencies": {
     "@mdx-js/mdx": "^0.15.0",
     "@mdx-js/tag": "^0.15.0",
     "gatsby": "next",
     "gatsby-mdx": "0.0.11",
     "gatsby-plugin-manifest": "next",
-    "gatsby-plugin-offline": "next",
     "gatsby-plugin-react-helmet": "next",
+    "gatsby-plugin-workbox": "^0.1.6",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-helmet": "^5.2.0",
     "react-intl": "^2.4.0"
   },
   "keywords": [
-    "gatsby"
+    "gatsby","documentation","mdx","offline","i18n"
   ],
   "license": "MIT",
   "scripts": {
