@@ -1,0 +1,30 @@
+import hi from 'react-intl/locale-data/hi';
+import pa from 'react-intl/locale-data/pa';
+import en from 'react-intl/locale-data/en';
+import enData from './msg/en';
+import hiData from './msg/hi'
+import paData from './msg/pa'
+
+const langMap = {
+    'en': {desc:'English',root:'/',localeData:en,data:enData},
+    'hi': {desc:'हिन्दी',root:'/hi',localeData:hi,data:hiData},
+    'pa': {desc:'ਪੰਜਾਬੀ',root:'/pa',localeData:pa,data:paData}
+  };
+  
+export class LangUtils{
+    static currentLocale = 'en';
+    /**
+     * This will reset the locale based on URL. Modify this method in case your app doesn't work in root mode
+     */
+    static checkURLLocale(){
+        if(window && window.location){
+            let locale = window.location.pathname.split('/')[1]
+            if(!(locale && langMap[locale])){
+                locale = 'en'
+            }
+            LangUtils.currentLocale = locale;
+        }
+    }
+}
+LangUtils.checkURLLocale();
+export default langMap;
