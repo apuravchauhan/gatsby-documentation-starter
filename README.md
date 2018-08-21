@@ -1,4 +1,7 @@
 # gatsby-documentation-starter
+
+[LIVE DEMO](https://friendly-cori-2da16d.netlify.com/)
+
 Starter pack for a documentation site built on top of Gatsby v2 default starter pack
 
 ~~~
@@ -14,3 +17,6 @@ gatsby develop
 2. i18n support using [react-intl plugin](https://github.com/yahoo/react-intl).
 3. Markdown (md) file support for documentation pages.
 4. Support for using React components inside Markdown (md) files using [mdx plugin](https://github.com/ChristopherBiscardi/gatsby-mdx).
+
+## Clone and deploy with one click
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/apuravchauhan/gatsby-documentation-starter)
