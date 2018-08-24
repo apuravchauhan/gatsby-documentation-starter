@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Gatsby Documentation Starter | Apurav Chauhan',
+    githubProject:'https://github.com/apuravchauhan/gatsby-documentation-starter/blob/master/src/pages'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -25,7 +26,10 @@ module.exports = {
     {
       resolve: `gatsby-mdx`,
       options: {
-        extensions: [".mdx", ".md"]
+        extensions: [".mdx", ".md"],
+        defaultLayouts: {
+          default: require.resolve("./src/components/layout.js")
+        }
       }
     }
   ],

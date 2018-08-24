@@ -1,11 +1,7 @@
-import Layout from '../../../../components/layout'
-
-export default ({children,location}) => (
-  <Layout>
-    <h1>My Layout {location.pathname}</h1>
-    <div>{children}</div>
-  </Layout>
-)
+---
+title: "My post title in punjabi"
+path:  "/pa/docs/android/index.md"
+---
 
 # h1 ਸਿਰਲੇਖ
 ## h2 ਸਿਰਲੇਖ

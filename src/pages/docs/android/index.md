@@ -1,11 +1,7 @@
-import Layout from '../../../components/layout'
-
-export default ({children,location}) => (
-  <Layout>
-    <h1>My Layout {location.pathname}</h1>
-    <div>{children}</div>
-  </Layout>
-)
+---
+title: "My post title"
+path:  "/docs/android/index.md"
+---
 
 # h1 header
 

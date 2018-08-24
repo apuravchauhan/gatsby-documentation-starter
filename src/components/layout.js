@@ -4,6 +4,7 @@ import { StaticQuery, graphql, Link } from 'gatsby'
 import { IntlProvider, addLocaleData } from 'react-intl';
 import Header from './header'
 import './layout.css'
+import Git from './githublink'
 import langMap, { LangUtils } from '../data/langs';
 
 export default class Layout extends Component {
@@ -12,13 +13,14 @@ export default class Layout extends Component {
     const currLocale = LangUtils.currentLocale;
     addLocaleData(langMap[currLocale].localeData);
     this.state = { msg: langMap[currLocale].data, locale: currLocale }
-
   }
 
 
   render() {
     const root = this.state.locale === 'en' ? '' : this.state.locale;
-    const { children } = this.props;
+    
+    const { children,pageContext={} } = this.props;
+    
     return <StaticQuery
       query={graphql`
       query SiteTitleQuery {
@@ -37,8 +39,8 @@ export default class Layout extends Component {
             <Helmet
               title={data.site.siteMetadata.title}
               meta={[
-                { name: 'description', content: 'Sample' },
-                { name: 'keywords', content: 'sample, something' },
+                { name: 'description', content: 'Gatsby starter for a localized documentation site' },
+                { name: 'keywords', content: 'gatsby, documentation, starter pack, localization ,markdown,md' },
               ]}
             >
               <html lang="en" />
@@ -56,7 +58,7 @@ export default class Layout extends Component {
                 maxWidth: 960,
                 padding: '2.0875rem 1.0875rem 1.45rem',
               }}>
-
+              <Git meta={pageContext.frontmatter}/>
               {children}
               <hr style={{ margin: 10, height: 2, background: '#f0f0f0' }} />
               MIT License | <a href="https://twitter.com/apuravchauhan">@apuravchauhan</a>
