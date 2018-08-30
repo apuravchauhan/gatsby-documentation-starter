@@ -16,9 +16,10 @@ path:  "/hi/docs/android/index.md"
   * दूसरा
   * तीसरा
 
-~~~
-//कोड उदाहरण
+```c
+/*कोड उदाहरण*/
+
 define foobar() {
     print "अपूर्व चौहान";
 }
-~~~
+```

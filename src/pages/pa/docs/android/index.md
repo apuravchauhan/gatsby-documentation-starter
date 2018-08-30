@@ -16,9 +16,10 @@ path:  "/pa/docs/android/index.md"
   * ਦੂਜਾ
   * ਤੀਜਾ
 
-~~~
+```c
 //ਕੋਡ ਉਦਾਹਰਨ
+
 define foobar() {
     print "ਅਪੂਰਵ ਚੌਹਾਨ";
 }
-~~~
+```

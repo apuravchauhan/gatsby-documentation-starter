@@ -14,11 +14,18 @@
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-helmet": "^5.2.0",
-    "react-intl": "^2.4.0"
+    "react-intl": "^2.4.0",
+    "remark-highlight.js": "^5.0.0"
   },
   "keywords": [
-    "gatsby","documentation","mdx","offline","i18n","documentation-as-code"
-  ],
+    "gatsby",
+    "documentation",
+    "mdx",
+    "offline",
+    "i18n",
+    "documentation-as-code",
+    "code highlight"
+    ],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
@@ -31,6 +38,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/apuravchauhan/gatsby-documentation-starter"
   }
 }

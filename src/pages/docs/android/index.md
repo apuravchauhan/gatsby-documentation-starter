@@ -18,9 +18,10 @@ Example of unordered list:
   * Second
   * Thirds
 
-~~~
+```c
 //Code example
+
 define foobar() {
     print "Apurav Chauhan";
 }
-~~~
+```

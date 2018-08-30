@@ -17,6 +17,14 @@ gatsby develop
 2. i18n support using [react-intl plugin](https://github.com/yahoo/react-intl).
 3. Markdown (md) file support for documentation pages.
 4. Support for using React components inside Markdown (md) files using [mdx plugin](https://github.com/ChristopherBiscardi/gatsby-mdx).
+5. Code highlighting
+6. Edit on Github links with each documentation page
+7. And much more
+
+## Code recipes - Coming soon
+TBD: How to configure github edit link
+TBD: How to change code highlight styling
+TBD: How to configure i18n support
 
 ## Clone and deploy with one click
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/apuravchauhan/gatsby-documentation-starter)

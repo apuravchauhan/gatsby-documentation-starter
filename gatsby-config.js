@@ -1,3 +1,5 @@
+const remarkHighlight = require('remark-highlight.js')
+
 module.exports = {
   siteMetadata: {
     title: 'Gatsby Documentation Starter | Apurav Chauhan',
@@ -29,7 +31,8 @@ module.exports = {
         extensions: [".mdx", ".md"],
         defaultLayouts: {
           default: require.resolve("./src/components/layout.js")
-        }
+        },
+        mdPlugins:[remarkHighlight]
       }
     }
   ],
